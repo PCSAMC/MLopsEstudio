@@ -107,7 +107,7 @@ export const MODS = [
       { q: '¿Cuándo elegir Qdrant?', a: 'Presupuesto estricto, filtros lógicos complejos de payload. Motor en Rust, ultra-eficiente, bajo consumo de RAM. Open source.' },
       { q: '¿Cuándo elegir Milvus?', a: '>100M vectores, escala masiva distribuida. Arquitectura de microservicios, el rey para datos a escala empresarial.' },
       { q: '¿Cuándo elegir pgvector?', a: 'Si ya operan con PostgreSQL y buscan máxima simplicidad. Extensión relacional, sin nueva infraestructura ni ops adicional.' },
-      { q: '¿Cuál es el Crossover Point?', a: 'A partir de 60-100M consultas/mes, self-hosting ahorra 50-75% vs SaaS. A 100M vectores: SaaS $15-28k/mes vs Milvus Self-Hosted $3.2-6.5k/mes.' },
+      { q: '¿Cuál es el Crossover Point?', a: 'A partir de 60-100M consultas/mes, self-hosting ahorra 50-75% vs SaaS. A 100M vectores: SaaS Pinecone $15k-$19k/mes vs Milvus Self-Hosted $3.2k-$6.5k/mes.' },
       { q: '¿Qué es un embedding y cómo se genera?', a: 'Representación numérica de alta dimensión (768-1536 dims) que captura significado semántico. Generados con text-embedding-ada-002 o sentence-transformers.' },
     ]
   },
