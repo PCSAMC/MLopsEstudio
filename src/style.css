@@ -1,0 +1,89 @@
+/* ═══════════════════════════════════════════════════════
+   MLOps Academy — Design System
+═══════════════════════════════════════════════════════ */
+:root {
+  --accent: #7C6EFA;
+  --accent2: #A78BFA;
+  --accent3: #C4B5FD;
+  --green: #34D399;
+  --green2: #6EE7B7;
+  --red: #F87171;
+  --red2: #FCA5A5;
+  --amber: #FBBF24;
+  --teal: #2DD4BF;
+  --pink: #F472B6;
+  --blue: #60A5FA;
+  --r: 16px;
+  --r-sm: 10px;
+  --r-xs: 6px;
+  --font: 'Inter', system-ui, -apple-system, sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
+  --ease: cubic-bezier(.4, 0, .2, 1);
+  --ease-spring: cubic-bezier(.34, 1.56, .64, 1);
+}
+
+[data-theme="dark"] {
+  --bg: #08090F;
+  --bg2: #0E1018;
+  --bg3: #151822;
+  --bg4: #1C2030;
+  --bg5: #252A3A;
+  --border: rgba(124,110,250,.08);
+  --border2: rgba(124,110,250,.18);
+  --border3: rgba(124,110,250,.30);
+  --text: #F0EEFF;
+  --text2: #A09DC0;
+  --text3: #5C5A7A;
+  --card: rgba(21,24,34,.75);
+  --card-solid: #151822;
+  --shadow: 0 10px 50px rgba(0,0,0,.6);
+  --glow: 0 0 60px rgba(124,110,250,.08);
+}
+
+[data-theme="light"] {
+  --bg: #FAFAFF;
+  --bg2: #F3F2FF;
+  --bg3: #FFFFFF;
+  --bg4: #F0EEFF;
+  --bg5: #E8E6FF;
+  --border: rgba(124,110,250,.10);
+  --border2: rgba(124,110,250,.20);
+  --border3: rgba(124,110,250,.35);
+  --text: #18152D;
+  --text2: #56538A;
+  --text3: #9895C0;
+  --card: rgba(255,255,255,.80);
+  --card-solid: #FFFFFF;
+  --shadow: 0 10px 50px rgba(124,110,250,.08);
+  --glow: none;
+}
+
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0 }
+html { scroll-behavior: smooth; font-size: 16px }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+  transition: background .4s var(--ease), color .4s var(--ease);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+#app { min-height: 100vh }
+button { font-family: var(--font); cursor: pointer; border: none; background: none }
+textarea { font-family: var(--font) }
+
+::-webkit-scrollbar { width: 5px }
+::-webkit-scrollbar-track { background: transparent }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 99px }
+
+.mono { font-family: var(--mono) }
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+
+::selection { background: rgba(124,110,250,.25); color: var(--text) }
